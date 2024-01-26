@@ -1,0 +1,236 @@
+/* Default styling */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic Structure Styling */
+
+/* First Row */
+.page-actions-cont{
+    height: 3rem;
+    background-color: #218c74;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    padding-left: 0.5rem;
+} 
+
+/* Second Row */
+.cell-actions-cont{
+    height: 3rem;
+    /* background-color: brown; */
+    background-color: #ECF0F1;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.cell-actions-cont > * {
+    /* display:inline-block; */
+    margin: 0.5rem;
+}
+
+.cell-actions-cont > *:hover{
+    cursor: default;
+}
+
+/* Third row */
+.formula-actions-cont{
+    height: 2rem;
+    background-color: #ECF0F1;
+    padding-left: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Last Row */
+.sheet-actions-cont{
+    height: 3rem;
+    background-color: #ECF0F1;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding-left: 0.5rem;
+    overflow: auto;
+}
+
+/* Grid */
+.grid-actions-cont{
+    height: calc(100vh - 3rem - 3rem - 2rem - 3rem);
+    /* background-color: rgb(242, 209, 242); */
+    /* background-color: #ECF0F1; */
+    overflow: scroll;
+    position: relative;
+    /* padding-left: 0.5rem; */
+}
+
+
+
+
+
+
+/* Page actions container styling */
+.page-action{
+    /* margin: 0.5rem; */
+    text-align: center;
+    height: 2rem;
+    width: 3rem;
+    color: #f1f2f6;
+    /* color: black; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+
+.selected-page-action{
+    background-color:  #f1f2f6;
+    color: #218c74;
+    position: relative;
+    /* height: 3rem; */
+    /* width: 2.8rem; */
+    top: 0.5rem;
+}
+
+/* Cell actions container styling */
+.font-family-prop{
+    padding : 0.2rem;
+}
+
+.font-size-prop{
+    padding : 0.2rem;
+}
+
+.cell-actions-cont > select{
+    border: none;
+    border-radius: 2px;
+    outline: none;
+}
+
+.color-prop{
+    position: relative;
+}
+
+.color-prop > input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/* Formula actions container styling */
+.formula-icon{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.formula-actions-cont > input{
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    height: 70%;
+}
+
+.address-bar{
+    width: 5rem;
+    text-align: center;
+}
+
+.formula-bar{
+    width: calc(100vw - 0.5rem - 5rem - 1.5rem - 1rem);
+}
+
+/* Sheet actions container styling */
+.sheets-folder-cont{
+    height: 2rem;
+    width: calc(100vw - 5vw);
+    /* background-color: chartreuse; */
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.sheets-folder{
+    text-decoration: underline;
+    font-weight: bold;
+    text-decoration-thickness: 2px;
+}
+
+.sheet-add-icon:hover{
+    cursor: default;
+}
+
+/* Grid actions container styling */
+.dummy-cell{
+    height: 2rem;
+    width: 2rem;
+    background-color: #218c74;
+    position: fixed;
+    z-index: 5;
+}
+
+.cells-cont{
+    position: absolute;
+    top: 0px;
+    left: 2rem;
+    /* background-color: aqua; */
+}
+
+.address-row-cont{
+    display: flex;
+    /* background-color: lightcoral; */
+    height: 2rem;
+
+    position: sticky;
+    top: 0;
+    left: 2rem;
+
+}
+
+.address-col-cont{
+    position: sticky;
+    top: 2rem;
+    left: 0;
+
+}
+
+.address-col{
+    height: 2rem;
+    width: 2rem;
+    /* padding: 0.5rem; */
+    /* text-align: center; */
+    border: 1px solid #dfe4ea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.address-row{
+    height: 2rem;
+    width: 5rem;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid #dfe4ea;
+}
+
+.row-cont{
+    display: flex;
+}
+
+.cell{
+    height: 2rem;
+    width: 5rem;
+    border: 1px solid #dfe4ea;
+    outline: none;
+}
